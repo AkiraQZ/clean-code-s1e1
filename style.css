@@ -32,13 +32,13 @@ body {
     margin: 0 auto 0;
 }
 
-.task-input {
+.task-text {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
 
-#new-item {
+.new-item__input {
     display: flex;
 }
 
@@ -105,8 +105,8 @@ input[type="text"]:focus {
     margin: 0 0 20px;
 }
 
-#new-item {
-    width: 318px;
+.task-input {
+    width: 412px;
 }
 
 /* Task list */
@@ -130,16 +130,17 @@ input[type="text"]:focus {
     margin: 0 10px;
 }
 
-.comp-task > label,
-.incom-task > label {
+.comp-task > .task-text,
+.incom-task > .task-text {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-.incom-task > input[type="text"],
-.comp-task > input[type="text"] {
+.incom-task > .task-input,
+.comp-task > .task-input
+{
     width: 226px
 }
 
@@ -154,22 +155,24 @@ input[type="text"]:focus {
 }
 
 /* Completed */
-#com-tasks-lsit label {
+.comp-task > .task-text {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-.incom-task .task-input,
-.comp-task .task-input {
+ .incom-task .task-input,
+ .comp-task .task-input {
     display:none
 }
 
-.edit input[type=text] {
-    display:inline-block;
-    width:224px
+.incom-task.edit .task-input,
+.comp-task.edit .task-input {
+  display: inline-block;
+  width: 335px;
 }
 
-.edit label {
-    display:none;
+.incom-task.edit .task-text,
+.comp-task.edit .task-text {
+  display: none;
 }
