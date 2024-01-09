@@ -162,7 +162,7 @@ input[type="text"]:focus {
 /* Edit Task */
  .incom-task .task-input,
  .comp-task .task-input {
-    display: none
+    display: none;
 }
 
 .incom-task.edit .task-input,
