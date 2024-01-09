@@ -18,22 +18,28 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
+    listItem.classList.add('comp-task');
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
+    checkBox.className='comp-task__input';
     //label
     var label=document.createElement("label");//label
+    label.className='task-text';
     //input (text)
     var editInput=document.createElement("input");//text
+    editInput.className='task-input';
     //button.edit
     var editButton=document.createElement("button");//edit button
+    editButton.className='edit-btn';
 
     //button.delete
     var deleteButton=document.createElement("button");//delete button
+    deleteButton.className='delete-btn';
     var deleteButtonImg=document.createElement("img");//delete button image
+    deleteButtonImg.className='delete-btn__img';
 
     label.innerText=taskString;
-    label.className='task';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
