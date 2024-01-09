@@ -42,7 +42,8 @@ body {
     display: flex;
 }
 
-ul {
+#incom-tasks-lsit,
+#comp-tasks-list {
     margin: 0;
     padding: 0px;
 }
