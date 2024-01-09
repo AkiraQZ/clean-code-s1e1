@@ -43,18 +43,18 @@ body {
 }
 
 ul {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 
 li,
 h3 {
-    list-style:none;
+    list-style: none;
 }
 
 input,
 button{
-    outline:none;
+    outline: none;
 }
 
 button {
@@ -139,8 +139,7 @@ input[type="text"]:focus {
 }
 
 .incom-task > .task-input,
-.comp-task > .task-input
-{
+.comp-task > .task-input {
     width: 226px
 }
 
@@ -163,7 +162,7 @@ input[type="text"]:focus {
 /* Edit Task */
  .incom-task .task-input,
  .comp-task .task-input {
-    display:none
+    display: none
 }
 
 .incom-task.edit .task-input,
