@@ -82,7 +82,8 @@ h3,
     margin: 0;
     text-transform: uppercase;
 }
-
+/* Don't change it bcs it's irrationaly,
+all inputs in this app is the same */
 input[type="text"] {
     margin: 0;
     font-size: 18px;
