@@ -18,14 +18,14 @@
         <!-- new-task -->
             <label class="new-item__header" for="new-item">Add Item</label>
             <div class="new-item__input">
-                <input id="new-item" class="task-input" type="text">
+                <input id="new-item-value" class="task-input" type="text">
                 <button class="new-item__btn">Add</button>
             </div>
         </p>
         <h3>Todo</h3>
         <ul id="incom-tasks-list">
             <li class="incom-task">
-                <input class="incom-task__input" type="checkbox">
+                <input class="task-check" type="checkbox">
                 <label class="task-text">Pay Bills</label>
                 <input type="text" class="task-input">
                 <button class="edit-btn">Edit</button>
@@ -34,7 +34,7 @@
                 </button>
             </li>
             <li class="incom-task edit">
-                <input class="incom-task__input" type="checkbox">
+                <input class="task-check" type="checkbox">
                 <label class="task-text">Go Shopping</label>
                 <input type="text" value="Go Shopping" class="task-input">
                 <button class="edit-btn">Save</button>
@@ -46,7 +46,7 @@
         <h3>Completed</h3>
         <ul id="comp-tasks-list">
             <li class="comp-task">
-                <input class="comp-task__input" type="checkbox" checked>
+                <input class="task-check" type="checkbox" checked>
                 <label class="task-text">See the Doctor</label>
                 <input type="text" class="task-input">
                 <button class="edit-btn">Edit</button>
